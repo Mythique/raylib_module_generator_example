@@ -18,12 +18,12 @@ MODULE_NAME :: "raylib";
 
 #if OS == .WINDOWS {
   LIBRARY_NAME     :: "raylib";
-  VENDOR_DIRECTORY :: "vendor/raylib-4.5.0_win64_msvc16";
+  VENDOR_DIRECTORY :: "vendor/raylib-5.0_win64_msvc16";
   LIBRARY_FILES    :: string.["raylib.lib", "raylib.dll", "raylibdll.lib"];
 } else #if OS == .LINUX {
   LIBRARY_NAME     :: "libraylib";
-  VENDOR_DIRECTORY :: "vendor/raylib-4.5.0_linux_amd64";
-  LIBRARY_FILES    :: string.["libraylib.a", "libraylib.so", "libraylib.so.4.5.0", "libraylib.so.450"];
+  VENDOR_DIRECTORY :: "vendor/raylib-5.0_linux_amd64";
+  LIBRARY_FILES    :: string.["libraylib.a", "libraylib.so", "libraylib.so.5.0.0", "libraylib.so.500"];
 } else {
   #assert false;
 }
